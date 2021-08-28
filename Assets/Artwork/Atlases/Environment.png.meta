@@ -1267,16 +1267,16 @@ TextureImporter:
     second: water_0
   - first:
       213: 8453345496452838924
-    second: Atlas_144
+    second: barrel_2
   - first:
       213: -5601785829698105500
-    second: Atlas_145
+    second: barrel_1
   - first:
       213: -672990728313235662
     second: chair
   - first:
       213: 2317926390724186292
-    second: little_table
+    second: little_chair
   - first:
       213: -683848513557999592
     second: table_0
@@ -1288,7 +1288,7 @@ TextureImporter:
     second: table_2
   - first:
       213: 3126290590263122511
-    second: Atlas_151
+    second: table1_2
   - first:
       213: -9186922057514181284
     second: Atlas_152
@@ -1360,19 +1360,19 @@ TextureImporter:
     second: Atlas_174
   - first:
       213: 8339673697380676364
-    second: Atlas_175
+    second: plate
   - first:
       213: -1462902111062902586
     second: Atlas_176
   - first:
       213: -4455036496089959535
-    second: Atlas_177
+    second: bowl_empty
   - first:
       213: -8913237869117699007
-    second: Atlas_178
+    second: bowl_big_empty
   - first:
       213: 667348974007956467
-    second: Atlas_179
+    second: table1_1
   - first:
       213: -4889700749085891745
     second: Atlas_180
@@ -1435,13 +1435,13 @@ TextureImporter:
     second: Atlas_199
   - first:
       213: 6853282960571149714
-    second: Atlas_200
+    second: chest_small_closed
   - first:
       213: -8739779878225115318
-    second: Atlas_201
+    second: chest_small_opened
   - first:
       213: 5834862339343480434
-    second: Atlas_202
+    second: picture_0
   - first:
       213: 1849083040758891110
     second: Atlas_203
@@ -1450,16 +1450,16 @@ TextureImporter:
     second: Atlas_204
   - first:
       213: 2669436491556051002
-    second: Atlas_205
+    second: bowl_full
   - first:
       213: 8553001441579941725
-    second: Atlas_206
+    second: bowl_big_full
   - first:
       213: 5009196601072047290
-    second: Atlas_207
+    second: table1_0
   - first:
       213: 4533331785425328769
-    second: Atlas_208
+    second: torch_right
   - first:
       213: -2126385709890370048
     second: Atlas_209
@@ -1519,16 +1519,16 @@ TextureImporter:
     second: Atlas_227
   - first:
       213: -8664887039082023
-    second: Atlas_228
+    second: chest_big_closed
   - first:
       213: 4761799070862718283
-    second: Atlas_229
+    second: chest_big_opened
   - first:
       213: -6231863203862500562
-    second: Atlas_230
+    second: picture_1
   - first:
       213: -5565515804791746063
-    second: Atlas_231
+    second: barrel_0
   - first:
       213: 864746315189159053
     second: Atlas_232
@@ -1540,10 +1540,10 @@ TextureImporter:
     second: Atlas_234
   - first:
       213: 2680197654725019377
-    second: Atlas_235
+    second: banana
   - first:
       213: -1989750950583365226
-    second: Atlas_236
+    second: b
   - first:
       213: -7673452796629743350
     second: Atlas_237
@@ -1603,25 +1603,25 @@ TextureImporter:
     second: Atlas_255
   - first:
       213: 1967143215762266906
-    second: Atlas_256
+    second: key_silver
   - first:
       213: 5234568597376030882
-    second: Atlas_257
+    second: key_gold
   - first:
       213: -3358075914891144721
-    second: Atlas_258
+    second: beer_empty
   - first:
       213: 7389427421581803983
-    second: Atlas_259
+    second: beer_full
   - first:
       213: -7082247028423658624
-    second: Atlas_260
+    second: chicken
   - first:
       213: 5350061925156652610
-    second: Atlas_261
+    second: bucket_empty
   - first:
       213: -3962679080262381008
-    second: Atlas_262
+    second: bucket_with_water
   - first:
       213: -3876162091588759312
     second: Atlas_263
@@ -4777,7 +4777,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_144
+      name: barrel_2
       rect:
         serializedVersion: 2
         x: 96
@@ -4798,7 +4798,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_145
+      name: barrel_1
       rect:
         serializedVersion: 2
         x: 120
@@ -4840,7 +4840,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: little_table
+      name: little_chair
       rect:
         serializedVersion: 2
         x: 168
@@ -4924,7 +4924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_151
+      name: table1_2
       rect:
         serializedVersion: 2
         x: 264
@@ -5428,7 +5428,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_175
+      name: plate
       rect:
         serializedVersion: 2
         x: 168
@@ -5470,7 +5470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_177
+      name: bowl_empty
       rect:
         serializedVersion: 2
         x: 216
@@ -5491,7 +5491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_178
+      name: bowl_big_empty
       rect:
         serializedVersion: 2
         x: 240
@@ -5512,7 +5512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_179
+      name: table1_1
       rect:
         serializedVersion: 2
         x: 264
@@ -5953,7 +5953,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_200
+      name: chest_small_closed
       rect:
         serializedVersion: 2
         x: 96
@@ -5974,7 +5974,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_201
+      name: chest_small_opened
       rect:
         serializedVersion: 2
         x: 120
@@ -5995,7 +5995,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_202
+      name: picture_0
       rect:
         serializedVersion: 2
         x: 144
@@ -6058,7 +6058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_205
+      name: bowl_full
       rect:
         serializedVersion: 2
         x: 216
@@ -6079,7 +6079,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_206
+      name: bowl_big_full
       rect:
         serializedVersion: 2
         x: 240
@@ -6100,11 +6100,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_207
+      name: table1_0
       rect:
         serializedVersion: 2
         x: 264
-        y: 47
+        y: 48
         width: 24
         height: 24
       alignment: 0
@@ -6121,7 +6121,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_208
+      name: torch_right
       rect:
         serializedVersion: 2
         x: 288
@@ -6541,7 +6541,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_228
+      name: chest_big_closed
       rect:
         serializedVersion: 2
         x: 96
@@ -6562,7 +6562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_229
+      name: chest_big_opened
       rect:
         serializedVersion: 2
         x: 120
@@ -6583,7 +6583,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_230
+      name: picture_1
       rect:
         serializedVersion: 2
         x: 144
@@ -6604,7 +6604,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_231
+      name: barrel_0
       rect:
         serializedVersion: 2
         x: 168
@@ -6688,7 +6688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_235
+      name: banana
       rect:
         serializedVersion: 2
         x: 264
@@ -6709,7 +6709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_236
+      name: b
       rect:
         serializedVersion: 2
         x: 288
@@ -7129,7 +7129,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_256
+      name: key_silver
       rect:
         serializedVersion: 2
         x: 96
@@ -7150,7 +7150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_257
+      name: key_gold
       rect:
         serializedVersion: 2
         x: 120
@@ -7171,7 +7171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_258
+      name: beer_empty
       rect:
         serializedVersion: 2
         x: 144
@@ -7192,7 +7192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_259
+      name: beer_full
       rect:
         serializedVersion: 2
         x: 168
@@ -7213,7 +7213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_260
+      name: chicken
       rect:
         serializedVersion: 2
         x: 192
@@ -7234,7 +7234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_261
+      name: bucket_empty
       rect:
         serializedVersion: 2
         x: 216
@@ -7255,7 +7255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_262
+      name: bucket_with_water
       rect:
         serializedVersion: 2
         x: 240
