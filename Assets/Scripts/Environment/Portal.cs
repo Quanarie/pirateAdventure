@@ -9,7 +9,7 @@ public class Portal : Collidable
 
     protected override void OnCollide(Collider2D collider)
     {
-        if (collider.TryGetComponent(out PlayerMovement _))
+        if (collider.TryGetComponent(out Player _))
         {
             GameManager.Instance.SaveState();
             SceneManager.LoadScene(sceneName);

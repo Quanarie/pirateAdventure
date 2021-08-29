@@ -2,23 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public abstract class Mover : Fighter
 {
-    private BoxCollider2D boxCollider;
-    private Vector3 moveDelta;
-    private RaycastHit2D hit;
+    protected BoxCollider2D boxCollider;
+    protected Vector3 moveDelta;
+    protected RaycastHit2D hit;
+    protected float ySpeed = 0.75f;
+    protected float xSpeed = 1f;
 
-    private void Start()
+    protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    private void FixedUpdate()
+    protected virtual void UpdateMotor(Vector3 input)
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-
-        moveDelta = new Vector3(x, y, 0);
+        moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
         if (moveDelta.x > 0)
         {
@@ -29,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), 
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y),
                                 Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {

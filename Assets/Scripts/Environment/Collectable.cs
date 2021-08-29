@@ -8,7 +8,7 @@ public class Collectable : Collidable
 
     protected override void OnCollide(Collider2D collider)
     {
-        if (collider.TryGetComponent(out PlayerMovement _))
+        if (collider.TryGetComponent(out Player _))
         {
             OnCollect();
         }
