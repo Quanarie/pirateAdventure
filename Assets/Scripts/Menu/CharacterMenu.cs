@@ -44,18 +44,29 @@ public class CharacterMenu : MonoBehaviour
 
     public void OnUpgradeClick()
     {
-
+        if (GameManager.Instance.TryUpgradeWeapon())
+        {
+            UpdateMenu();
+        }
     }
 
     public void UpdateMenu()
     {
-        //weaponSprite.sprite = 
-        //uprgadeCostText.text = 
+        weaponSprite.sprite = GameManager.Instance.weaponSprites[GameManager.Instance.weapon.weaponLevel];
+        if (GameManager.Instance.weapon.weaponLevel == GameManager.Instance.weaponPrices.Count)
+        {
+            upgradeCostText.text = "MAX";
+        }
+        else
+            upgradeCostText.text = GameManager.Instance.weaponPrices[GameManager.Instance.weapon.weaponLevel].ToString();
+
+
 
         //levelText.text = 
         hitpointText.text = GameManager.Instance.player.hitpoint.ToString();
         pesosText.text = GameManager.Instance.pesos.ToString();
 
-        //xpText.text = 
+        //xpText.text =
+        //xpBar.localScale = 
     }
 }

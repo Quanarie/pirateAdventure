@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Weapon : Collidable
 {
-    public int damagePoint = 1;
-    public float pushForce = 2.0f;
+    public int[] damagePoint = { 1, 2, 3, 4, 5, 6, 7 };
+    public float[] pushForce = {2f, 2.2f, 2.5f, 3f, 3.7f, 4.5f, 6f};
 
     public int weaponLevel = 0;
 
@@ -15,10 +15,15 @@ public class Weapon : Collidable
     private float cooldown = 0.5f;
     private float lastSwing;
 
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     protected override void Start()
     {
         base.Start();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        
         animator = GetComponent<Animator>();
     }
 
@@ -49,12 +54,24 @@ public class Weapon : Collidable
 
             Damage dmg = new Damage
             {
-                damageAmount = damagePoint,
+                damageAmount = damagePoint[weaponLevel],
                 origin = transform.position,
-                pushForce = pushForce
+                pushForce = pushForce[weaponLevel]
             };
 
             collider.SendMessage("ReceiveDamage", dmg);
         }
+    }
+
+    public void UpgradeWeapon()
+    {
+        weaponLevel++;
+        spriteRenderer.sprite = GameManager.Instance.weaponSprites[weaponLevel];
+    }
+
+    public void SetLevelWeapon(int lvl)
+    {
+        weaponLevel = lvl;
+        spriteRenderer.sprite = GameManager.Instance.weaponSprites[weaponLevel];
     }
 }
