@@ -1303,13 +1303,13 @@ TextureImporter:
     second: Atlas_155
   - first:
       213: 154869339469119119
-    second: Atlas_156
+    second: fire_off_0
   - first:
       213: -3010435638452909744
     second: Atlas_157
   - first:
       213: -1439166658909573351
-    second: Atlas_158
+    second: bottle_on_ground
   - first:
       213: 451507318124000871
     second: Atlas_159
@@ -1321,7 +1321,7 @@ TextureImporter:
     second: Atlas_161
   - first:
       213: 9138067707148748450
-    second: Atlas_162
+    second: cactus1
   - first:
       213: -3312577920043477794
     second: Atlas_163
@@ -1387,28 +1387,28 @@ TextureImporter:
     second: Atlas_183
   - first:
       213: 7666075160595828970
-    second: Atlas_184
+    second: fire_off_!
   - first:
       213: 5918325696901631086
     second: Atlas_185
   - first:
       213: -7042639770157182216
-    second: Atlas_186
+    second: bottle_in_water
   - first:
       213: -5975647418825409250
-    second: Atlas_187
+    second: grave_closed1
   - first:
       213: -3163791429358168881
-    second: Atlas_188
+    second: grave_closed0
   - first:
       213: -2355505969325306380
-    second: Atlas_189
+    second: grave_opened
   - first:
       213: 7830920448493193388
-    second: Atlas_190
+    second: cactus0
   - first:
       213: -1623517267125872434
-    second: Atlas_191
+    second: cactus2
   - first:
       213: -1491367757287608160
     second: Atlas_192
@@ -1471,28 +1471,28 @@ TextureImporter:
     second: Atlas_211
   - first:
       213: -2539017706164072249
-    second: Atlas_212
+    second: fire_0
   - first:
       213: 3588590444508807153
-    second: Atlas_213
+    second: pine0
   - first:
       213: -7822583012398548117
-    second: Atlas_214
+    second: map0
   - first:
       213: 8899257129658453706
-    second: Atlas_215
+    second: skull
   - first:
       213: -4818687239142206308
-    second: Atlas_216
+    second: bone
   - first:
       213: -3405728437772958689
-    second: Atlas_217
+    second: rock_small
   - first:
       213: -4635852911317387512
-    second: Atlas_218
+    second: rock_big
   - first:
       213: 2900082034609347329
-    second: Atlas_219
+    second: rock_medium
   - first:
       213: -4237532329049844237
     second: Atlas_220
@@ -1555,25 +1555,25 @@ TextureImporter:
     second: Atlas_239
   - first:
       213: -4679125421587704770
-    second: Atlas_240
+    second: fire_1
   - first:
       213: 5583876565584583855
-    second: Atlas_241
+    second: pine1
   - first:
       213: 584616587254752349
-    second: Atlas_242
+    second: Atlas_242map0
   - first:
       213: -9019276980518824738
-    second: Atlas_243
+    second: bush_small0
   - first:
       213: 914802580307632230
-    second: Atlas_244
+    second: bush_with_berries_big
   - first:
       213: -5359666241724609647
-    second: Atlas_245
+    second: bush_small1
   - first:
       213: 8681038791400729419
-    second: Atlas_246
+    second: bush_big
   - first:
       213: -8533053247221256637
     second: Atlas_247
@@ -1639,10 +1639,10 @@ TextureImporter:
     second: Atlas_267
   - first:
       213: 136613102204606374
-    second: Atlas_268
+    second: fire_2
   - first:
       213: -3145816263218099659
-    second: Atlas_269
+    second: pine3
   - first:
       213: 7565696672301782134
     second: Atlas_270
@@ -1739,6 +1739,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -5029,7 +5053,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_156
+      name: fire_off_0
       rect:
         serializedVersion: 2
         x: 384
@@ -5071,7 +5095,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_158
+      name: bottle_on_ground
       rect:
         serializedVersion: 2
         x: 432
@@ -5092,70 +5116,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_159
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 96
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 766354e7383144600800000000000000
-      internalID: 451507318124000871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_160
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 96
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d9918fb9a8cae7e0800000000000000
-      internalID: -1735354075009934896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_161
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 96
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c760da2b928db110800000000000000
-      internalID: 1278321472192931778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_162
+      name: cactus1
       rect:
         serializedVersion: 2
         x: 528
@@ -5171,27 +5132,6 @@ TextureImporter:
       bones: []
       spriteID: 2a6c1120a20f0de70800000000000000
       internalID: 9138067707148748450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas_163
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 96
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed49109beeb5702d0800000000000000
-      internalID: -3312577920043477794
       vertices: []
       indices: 
       edges: []
@@ -5617,7 +5557,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_184
+      name: fire_off_!
       rect:
         serializedVersion: 2
         x: 384
@@ -5659,7 +5599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_186
+      name: bottle_in_water
       rect:
         serializedVersion: 2
         x: 432
@@ -5680,13 +5620,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_187
+      name: grave_closed1
       rect:
         serializedVersion: 2
         x: 456
         y: 72
         width: 24
-        height: 24
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5701,13 +5641,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_188
+      name: grave_closed0
       rect:
         serializedVersion: 2
         x: 480
         y: 72
         width: 24
-        height: 24
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5722,13 +5662,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_189
+      name: grave_opened
       rect:
         serializedVersion: 2
         x: 504
         y: 72
         width: 24
-        height: 24
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5743,7 +5683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_190
+      name: cactus0
       rect:
         serializedVersion: 2
         x: 528
@@ -5764,13 +5704,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_191
+      name: cactus2
       rect:
         serializedVersion: 2
         x: 552
         y: 72
         width: 24
-        height: 24
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6205,7 +6145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_212
+      name: fire_0
       rect:
         serializedVersion: 2
         x: 384
@@ -6226,7 +6166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_213
+      name: pine0
       rect:
         serializedVersion: 2
         x: 408
@@ -6247,7 +6187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_214
+      name: map0
       rect:
         serializedVersion: 2
         x: 432
@@ -6268,7 +6208,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_215
+      name: skull
       rect:
         serializedVersion: 2
         x: 456
@@ -6289,7 +6229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_216
+      name: bone
       rect:
         serializedVersion: 2
         x: 480
@@ -6310,7 +6250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_217
+      name: rock_small
       rect:
         serializedVersion: 2
         x: 504
@@ -6331,7 +6271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_218
+      name: rock_big
       rect:
         serializedVersion: 2
         x: 528
@@ -6352,7 +6292,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_219
+      name: rock_medium
       rect:
         serializedVersion: 2
         x: 552
@@ -6793,7 +6733,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_240
+      name: fire_1
       rect:
         serializedVersion: 2
         x: 384
@@ -6814,7 +6754,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_241
+      name: pine1
       rect:
         serializedVersion: 2
         x: 408
@@ -6835,7 +6775,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_242
+      name: Atlas_242map0
       rect:
         serializedVersion: 2
         x: 432
@@ -6856,7 +6796,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_243
+      name: bush_small0
       rect:
         serializedVersion: 2
         x: 456
@@ -6877,7 +6817,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_244
+      name: bush_with_berries_big
       rect:
         serializedVersion: 2
         x: 480
@@ -6898,7 +6838,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_245
+      name: bush_small1
       rect:
         serializedVersion: 2
         x: 504
@@ -6919,7 +6859,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_246
+      name: bush_big
       rect:
         serializedVersion: 2
         x: 528
@@ -7381,7 +7321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_268
+      name: fire_2
       rect:
         serializedVersion: 2
         x: 384
@@ -7402,7 +7342,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_269
+      name: pine3
       rect:
         serializedVersion: 2
         x: 408

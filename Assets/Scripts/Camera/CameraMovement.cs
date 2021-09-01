@@ -8,6 +8,11 @@ public class CameraMovement : MonoBehaviour
     public float boundX = 0.15f;
     public float boundY = 0.05f;
 
+    private void Start()
+    {
+        lookAt = GameManager.Instance.player.transform;
+    }
+
     private void LateUpdate()
     {
         Vector3 delta = Vector3.zero;

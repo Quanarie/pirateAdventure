@@ -63,11 +63,29 @@ public class CharacterMenu : MonoBehaviour
             upgradeCostText.text = GameManager.Instance.weaponPrices[GameManager.Instance.weapon.weaponLevel].ToString();
         }
 
-        //levelText.text = 
+        levelText.text = GameManager.Instance.GetCurrentLevel().ToString();
         hitpointText.text = GameManager.Instance.player.hitpoint.ToString();
         pesosText.text = GameManager.Instance.pesos.ToString();
 
-        //xpText.text =
-        //xpBar.localScale = 
+
+        int currLevel = GameManager.Instance.GetCurrentLevel();
+        if (currLevel == GameManager.Instance.xpTable.Count) 
+        {
+            xpText.text = GameManager.Instance.experience.ToString() + " total xp";
+            xpBar.localScale = Vector3.one;
+        }
+        else
+        {
+            int prevLvlXp = GameManager.Instance.GetXpToLevel(currLevel - 1);
+            int currLvlXp = GameManager.Instance.GetXpToLevel(currLevel);
+
+            int diff = currLvlXp - prevLvlXp;
+            int currXpIntoLevel = GameManager.Instance.experience - prevLvlXp;
+
+            float completionRatio = (float)currXpIntoLevel / (float)diff;
+
+            xpText.text = currXpIntoLevel.ToString() + " / " + diff;
+            xpBar.localScale = new Vector3(completionRatio, 1, 1);
+        }
     }
 }
