@@ -1030,7 +1030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 356548803}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 429181555}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &356548803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,7 +2028,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1122536611}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 429181555}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1122536611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2488,7 +2512,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d6286b09172ae4487388ee1384ff11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprites: []
+  playerSprites:
+  - {fileID: -1965401998591550813, guid: 51da491584fca844ca1fbdcd616ea65f, type: 3}
+  - {fileID: 6440628458277568191, guid: 51da491584fca844ca1fbdcd616ea65f, type: 3}
+  - {fileID: 933303178881835478, guid: 51da491584fca844ca1fbdcd616ea65f, type: 3}
   weaponSprites:
   - {fileID: -4232372475135122399, guid: c7f331a1e5a26f44fa41a905077f33f3, type: 3}
   - {fileID: -8248157553010839229, guid: c7f331a1e5a26f44fa41a905077f33f3, type: 3}

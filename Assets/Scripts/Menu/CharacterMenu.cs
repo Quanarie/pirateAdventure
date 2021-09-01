@@ -31,7 +31,7 @@ public class CharacterMenu : MonoBehaviour
 
             if (currentCharacterSelection < 0)
             {
-                currentCharacterSelection = GameManager.Instance.playerSprites.Count;
+                currentCharacterSelection = GameManager.Instance.playerSprites.Count - 1;
             }
 
             OnSelectionChanged();
@@ -40,6 +40,7 @@ public class CharacterMenu : MonoBehaviour
     private void OnSelectionChanged()
     {
         characterSelectionSprite.sprite = GameManager.Instance.playerSprites[currentCharacterSelection];
+        GameManager.Instance.player.SwapSprite(currentCharacterSelection);
     }
 
     public void OnUpgradeClick()
@@ -58,9 +59,9 @@ public class CharacterMenu : MonoBehaviour
             upgradeCostText.text = "MAX";
         }
         else
+        {
             upgradeCostText.text = GameManager.Instance.weaponPrices[GameManager.Instance.weapon.weaponLevel].ToString();
-
-
+        }
 
         //levelText.text = 
         hitpointText.text = GameManager.Instance.player.hitpoint.ToString();
