@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public RectTransform hitpointBar;
     public GameObject hud;
     public GameObject menu;
+    public Animator deathMenuAnimator;
 
     public int pesos;
     public int experience;
@@ -117,6 +118,13 @@ public class GameManager : MonoBehaviour
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+    }
+
+    public void Respawn()
+    {
+        deathMenuAnimator.SetTrigger("hide");
+        SceneManager.LoadScene("MainScene");
+        player.Respawn();
     }
 
     public void SaveState()
