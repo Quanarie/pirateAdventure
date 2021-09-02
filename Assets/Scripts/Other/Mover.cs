@@ -7,8 +7,8 @@ public abstract class Mover : Fighter
     protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
-    protected float ySpeed = 0.75f;
-    protected float xSpeed = 1f;
+    public float ySpeed = 0.75f;
+    public float xSpeed = 1f;
 
     protected virtual void Start()
     {
@@ -19,14 +19,7 @@ public abstract class Mover : Fighter
     {
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
-        if (moveDelta.x > 0)
-        {
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        }
-        else if (moveDelta.x < 0)
-        {
-            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        }
+        ChooseSpriteDirection(moveDelta);
 
         moveDelta += pushDirection;
 
@@ -44,6 +37,18 @@ public abstract class Mover : Fighter
         if (hit.collider == null)
         {
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
+        }
+    }
+
+    protected virtual void ChooseSpriteDirection(Vector3 moveDelta)
+    {
+        if (moveDelta.x > 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else if (moveDelta.x < 0)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
     }
 }
