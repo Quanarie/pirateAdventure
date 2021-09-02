@@ -21,11 +21,11 @@ public abstract class Mover : Fighter
 
         if (moveDelta.x > 0)
         {
-            transform.localScale = Vector3.one;
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
         else if (moveDelta.x < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
 
         moveDelta += pushDirection;

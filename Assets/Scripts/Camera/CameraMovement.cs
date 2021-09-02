@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform lookAt;
     public float boundX = 0.15f;
     public float boundY = 0.05f;
+
+    private Transform lookAt;
 
     private void Start()
     {

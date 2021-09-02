@@ -12,13 +12,16 @@ public class GameManager : MonoBehaviour
         if (Instance != null)
         {
             Destroy(gameObject);
+            Destroy(player.gameObject);
+            Destroy(floatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
             return;
         }
 
         Instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
-
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public List<Sprite> playerSprites;
@@ -29,6 +32,9 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+    public GameObject hud;
+    public GameObject menu;
 
     public int pesos;
     public int experience;
@@ -51,6 +57,12 @@ public class GameManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void OnHitpointChange()
+    {
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
     }
 
     public int GetCurrentLevel()
@@ -91,8 +103,8 @@ public class GameManager : MonoBehaviour
     }
     public void OnLevelUp()
     {
-        ShowText("LEVEL UP", 50, Color.blue, Vector3.zero, Vector3.up * 40, 2f);
         player.OnLevelUp();
+        OnHitpointChange();
     }
 
     /*preferedSkin
@@ -101,6 +113,11 @@ public class GameManager : MonoBehaviour
      *weaponLevel
      *vesselLevel
      */
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+    }
 
     public void SaveState()
     {
@@ -116,6 +133,8 @@ public class GameManager : MonoBehaviour
     }
     public void LoadState(Scene scene, LoadSceneMode mode)
     {
+        SceneManager.sceneLoaded -= LoadState;
+
         if (!PlayerPrefs.HasKey("SaveState"))
             return;
 
@@ -128,9 +147,5 @@ public class GameManager : MonoBehaviour
             player.SetLevel(GetCurrentLevel());
 
         weapon.SetLevelWeapon(int.Parse(data[3]));
-
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
-
-
 }

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 68e1806129009694cb165780e56944b5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Pirates
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 447cad078528422468d8e0f312b23c00, type: 3}
+  - {fileID: 12800000, guid: e291783a2ed6ad24a9cded29931bc637, type: 3}
+  - {fileID: 12800000, guid: 32fea1346620dd442ae4301eeb85e0b5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

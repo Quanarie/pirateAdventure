@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737876596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0379, y: 0.0804, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: 0.033, y: 0.078, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8166291661238318377}
   m_RootOrder: 0
@@ -102,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.06666667, y: 0.18}
+    oldSize: {x: 0.1010101, y: 0.27272728}
     newSize: {x: 0.1, y: 0.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 8166291661238318376}
   - component: {fileID: 8166291661238318379}
   - component: {fileID: 8166291661238318378}
+  - component: {fileID: 3768881723677074978}
   m_Layer: 7
   m_Name: Player
   m_TagString: Fighter
@@ -292,3 +293,15 @@ MonoBehaviour:
   hitpoint: 5
   maxHitpoint: 5
   pushRecoverySpeed: 0.2
+--- !u!114 &3768881723677074978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8166291661238318381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7beea7269dd5329479b6dde5909b0134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

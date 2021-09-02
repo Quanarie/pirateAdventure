@@ -10,8 +10,6 @@ public class Player : Mover
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        DontDestroyOnLoad(gameObject);
     }
 
     private void FixedUpdate()
@@ -39,5 +37,12 @@ public class Player : Mover
         {
             OnLevelUp();
         }
+    }
+
+    protected override void ReceiveDamage(Damage dmg)
+    {
+        base.ReceiveDamage(dmg);
+
+        GameManager.Instance.OnHitpointChange();
     }
 }
