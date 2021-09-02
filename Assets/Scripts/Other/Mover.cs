@@ -19,7 +19,14 @@ public abstract class Mover : Fighter
     {
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
-        ChooseSpriteDirection(moveDelta);
+        if (moveDelta.x > 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else if (moveDelta.x < 0)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
 
         moveDelta += pushDirection;
 
@@ -37,18 +44,6 @@ public abstract class Mover : Fighter
         if (hit.collider == null)
         {
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
-        }
-    }
-
-    protected virtual void ChooseSpriteDirection(Vector3 moveDelta)
-    {
-        if (moveDelta.x > 0)
-        {
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        }
-        else if (moveDelta.x < 0)
-        {
-            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
     }
 }
