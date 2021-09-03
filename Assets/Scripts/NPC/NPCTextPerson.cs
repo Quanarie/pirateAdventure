@@ -42,15 +42,18 @@ public class NPCTextPerson : Collidable
 
     protected override void OnCollide(Collider2D collider)
     {
-        if (Time.time - lastMessage > cooldown && messageNumber == 0)
+        if (collider.TryGetComponent(out Player _))
         {
-            GameManager.Instance.dialogueBox.SetActive(true);
-            GameManager.Instance.dialogueText.text = message[0];
-            messageNumber++;
+            if (Time.time - lastMessage > cooldown && messageNumber == 0)
+            {
+                GameManager.Instance.dialogueBox.SetActive(true);
+                GameManager.Instance.dialogueText.text = message[0];
+                messageNumber++;
 
-            isBoxActive = true;
+                isBoxActive = true;
 
-            lastMessage = Time.time;
+                lastMessage = Time.time;
+            }
         }
     }
 }
