@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 7545970004454701007}
   - component: {fileID: 7545970004454701004}
   - component: {fileID: 7545970004454701005}
+  - component: {fileID: 6791878881956619299}
+  - component: {fileID: 1716940278}
   m_Layer: 6
   m_Name: IntroNPC
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0043653026, y: -0.016837627}
+  m_Offset: {x: -0.0030896068, y: -0.015561923}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.05897431, y: 0.11884135}
+  m_Size: {x: 0.074282736, y: 0.12777123}
   m_EdgeRadius: 0
 --- !u!114 &7545970004454701005
 MonoBehaviour:
@@ -140,3 +142,41 @@ MonoBehaviour:
   - Hi, this is Tortuga!
   - A lot of pirates come here to make some money...
   - Or just have fun :p
+--- !u!114 &6791878881956619299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545970004454701002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5d10942e3e10742893e1537a8650fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoint: 10
+  maxHitpoint: 10
+  pushRecoverySpeed: 0.2
+  ySpeed: 0.2
+  xSpeed: 0.3
+  walkTime: 1
+  waitTime: 3
+--- !u!95 &1716940278
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7545970004454701002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e36619ece35833c488b5db76795e46ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

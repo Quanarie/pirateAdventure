@@ -62733,7 +62733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1872597097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63358,6 +63358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932468357}
     m_Modifications:
+    - target: {fileID: 1716940278, guid: 83df4a4008af9c741a1bd87e4d51e357, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7545970004454701002, guid: 83df4a4008af9c741a1bd87e4d51e357, type: 3}
       propertyPath: m_Name
       value: IntroNPC
