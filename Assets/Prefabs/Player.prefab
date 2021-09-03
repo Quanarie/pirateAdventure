@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8166291661238318377}
   - component: {fileID: 8166291661238318376}
+  - component: {fileID: 8366349483910222078}
   - component: {fileID: 8166291661238318379}
   - component: {fileID: 8166291661238318378}
   - component: {fileID: 3768881723677074978}
@@ -239,7 +240,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 274632027
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1965401998591550813, guid: 51da491584fca844ca1fbdcd616ea65f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -252,6 +253,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8366349483910222078
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8166291661238318381}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03ab5ae3a5642604b865f75723a1304d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &8166291661238318379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -293,6 +313,8 @@ MonoBehaviour:
   hitpoint: 5
   maxHitpoint: 5
   pushRecoverySpeed: 0.2
+  ySpeed: 0.75
+  xSpeed: 1
 --- !u!114 &3768881723677074978
 MonoBehaviour:
   m_ObjectHideFlags: 0

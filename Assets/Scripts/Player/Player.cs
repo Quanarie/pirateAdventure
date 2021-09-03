@@ -8,11 +8,13 @@ public class Player : Mover
     private bool isAlive = true;
     private float healCooldown = 3f;
     private float lastHeal;
+    private Animator animator;
 
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
         lastHeal = -healCooldown;
     }
@@ -23,7 +25,18 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         if (isAlive)
+        {
             UpdateMotor(new Vector3(x, y, 0));
+
+            if (x != 0 && y != 0)
+            {
+                animator.SetBool("move", true);
+            }
+            else if (x == 0 && y == 0)
+            {
+                animator.SetBool("move", false);
+            }
+        }
     }
 
     public void SwapSprite(int skinId)
