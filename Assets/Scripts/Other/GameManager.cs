@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public GameObject hud;
     public GameObject menu;
     public Animator deathMenuAnimator;
+    public Animator travelMenuAnimator;
 
     public GameObject dialogueBox;
     public Text dialogueText;
