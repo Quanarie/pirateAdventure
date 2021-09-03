@@ -244,7 +244,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 274632027
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5346793723966489441, guid: c7f331a1e5a26f44fa41a905077f33f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 924819394630275119}
   - component: {fileID: 924819394630275116}
   m_Layer: 7
-  m_Name: boss0
+  m_Name: Boss0
   m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -390,7 +390,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 274632027
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -4590863263307369687, guid: c7f331a1e5a26f44fa41a905077f33f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -421,8 +421,8 @@ MonoBehaviour:
   ySpeed: 0.375
   xSpeed: 0.5
   xpValue: 50
-  triggerLenght: 3
-  chaseLenght: 10
+  triggerLenght: 2
+  chaseLenght: 4
   filter:
     useTriggers: 0
     useLayerMask: 0

@@ -158,11 +158,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 274632027
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6845980268273053146, guid: c7f331a1e5a26f44fa41a905077f33f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.10666667, y: 0.10666667}
@@ -212,6 +212,8 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverySpeed: 0.2
+  ySpeed: 0.75
+  xSpeed: 1
   xpValue: 10
   triggerLenght: 1
   chaseLenght: 3

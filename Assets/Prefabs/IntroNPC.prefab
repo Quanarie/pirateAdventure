@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 274632027
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -801139475012854697, guid: 51da491584fca844ca1fbdcd616ea65f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,4 +136,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  message: Hi, this is Tortuga!
+  message:
+  - Hi, this is Tortuga!
+  - A lot of pirates come here to make some money...
+  - Or just have fun :p
