@@ -8,7 +8,8 @@ public class QuestManager : MonoBehaviour
     
     public QuestObject[] quests;
     public bool[] questCompleted;
-    public string itemCollected;
+    [HideInInspector] public string itemCollected;
+    [HideInInspector] public string enemyKilled;
 
     private void Start()
     {

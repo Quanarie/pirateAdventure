@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : Mover
 {
+    public string nameForQuest;
     public int xpValue = 1;
 
     public float triggerLenght = 1f;
@@ -76,5 +77,7 @@ public class Enemy : Mover
 
         GameManager.Instance.GrantXp(xpValue);
         GameManager.Instance.ShowText("+ " + xpValue + " xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1f);
+
+        QuestManager.Instance.enemyKilled = nameForQuest;
     }
 }
