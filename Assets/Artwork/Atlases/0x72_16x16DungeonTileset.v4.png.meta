@@ -38,6 +38,9 @@ TextureImporter:
   - first:
       213: 5346793723966489441
     second: bossHelper0
+  - first:
+      213: -451688941019097673
+    second: elixir0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -411,7 +414,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,6 +422,27 @@ TextureImporter:
       bones: []
       spriteID: 1638f4c3090a33a40800000000000000
       internalID: 5346793723966489441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: elixir0
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 33
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b595912d474bb9f0800000000000000
+      internalID: -451688941019097673
       vertices: []
       indices: 
       edges: []
