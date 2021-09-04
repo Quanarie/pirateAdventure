@@ -340,7 +340,7 @@ TextureImporter:
     second: Characters_47
   - first:
       213: 2154758275318018791
-    second: Characters_48
+    second: mechanic
   - first:
       213: 2075355484574984046
     second: Characters_49
@@ -1483,7 +1483,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters_48
+      name: mechanic
       rect:
         serializedVersion: 2
         x: 0

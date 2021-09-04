@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     public int pesos;
     public int experience;
+    public int shipLevel;
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
