@@ -12,10 +12,17 @@ public class NPCTextPerson : Collidable
 
     private bool isBoxActive;
 
+    private NPCMovement moveScript;
+    private float xSpeedPlayer;
+    private float ySpeedPlayer;
+
     protected override void Start()
     {
         base.Start();
         lastMessage = -cooldown;
+        moveScript = GetComponent<NPCMovement>();
+        xSpeedPlayer = GameManager.Instance.player.xSpeed;
+        ySpeedPlayer = GameManager.Instance.player.ySpeed;
     }
 
     protected override void Update()
@@ -29,6 +36,10 @@ public class NPCTextPerson : Collidable
 
                 isBoxActive = false;
                 GameManager.Instance.dialogueBox.SetActive(false);
+
+                moveScript.enabled = true;
+                GameManager.Instance.player.xSpeed = xSpeedPlayer;
+                GameManager.Instance.player.ySpeed = ySpeedPlayer;
             }
             else
             {
@@ -50,6 +61,9 @@ public class NPCTextPerson : Collidable
                 GameManager.Instance.dialogueText.text = message[0];
                 messageNumber++;
 
+                moveScript.enabled = false;
+                GameManager.Instance.player.xSpeed = 0f;
+                GameManager.Instance.player.ySpeed = 0f;
                 isBoxActive = true;
 
                 lastMessage = Time.time;
