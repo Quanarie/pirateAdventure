@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public GameObject menu;
     public Animator deathMenuAnimator;
     public Animator travelMenuAnimator;
+    public QuestManager questManager;
 
     public GameObject dialogueBox;
     public Text dialogueText;
@@ -113,13 +114,6 @@ public class GameManager : MonoBehaviour
         OnHitpointChange();
     }
 
-    /*preferedSkin
-     *pesos
-     *experience
-     *weaponLevel
-     *vesselLevel
-     */
-
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
@@ -132,6 +126,14 @@ public class GameManager : MonoBehaviour
         player.Respawn();
     }
 
+    /*preferedSkin
+     *pesos
+     *experience
+     *weaponLevel
+     *vesselLevel
+     *currentMainQuest
+     */
+
     public void SaveState()
     {
         string s = "";
@@ -140,7 +142,8 @@ public class GameManager : MonoBehaviour
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString() + "|";
-        s += "0";
+        s += "0" + "|";
+        s += QuestManager.Instance.GetCurrentMainQuest().ToString();
 
         PlayerPrefs.SetString("SaveState", s);
     }
@@ -160,5 +163,7 @@ public class GameManager : MonoBehaviour
             player.SetLevel(GetCurrentLevel());
 
         weapon.SetLevelWeapon(int.Parse(data[3]));
+
+        questManager.SetCurrentMainQuest(int.Parse(data[5]));
     }
 }

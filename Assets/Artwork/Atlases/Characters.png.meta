@@ -328,7 +328,7 @@ TextureImporter:
     second: Characters_43
   - first:
       213: -2295010489493539482
-    second: Characters_44
+    second: questDealer
   - first:
       213: -3296487692259334306
     second: Characters_45
@@ -1399,7 +1399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters_44
+      name: questDealer
       rect:
         serializedVersion: 2
         x: 0
