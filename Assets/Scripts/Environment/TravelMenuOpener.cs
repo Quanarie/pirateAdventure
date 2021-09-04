@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TravelMenuOpener : Collidable
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out Player _))
+        if (collision.TryGetComponent(out Player _))
         {
             GameManager.Instance.travelMenuAnimator.SetTrigger("show");
         }
