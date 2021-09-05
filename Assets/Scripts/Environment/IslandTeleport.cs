@@ -28,6 +28,8 @@ public class IslandTeleport : MonoBehaviour
             {
                 GameManager.Instance.travelMenuAnimator.SetTrigger("hide");
 
+                QuestManager.Instance.isQuestTaken = false;
+
                 GameManager.Instance.SaveState();
                 SceneManager.LoadScene(sceneName);
             }

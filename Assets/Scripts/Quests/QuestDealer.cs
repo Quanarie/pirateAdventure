@@ -14,7 +14,7 @@ public class QuestDealer : MonoBehaviour
         questNumber = QuestManager.Instance.GetCurrentMainQuest();
         bCollider = GetComponent<BoxCollider2D>();
 
-        if (questNumber == QuestManager.Instance.quests.Length)
+        if (questNumber == QuestManager.Instance.quests.Length || QuestManager.Instance.isQuestTaken)
         {
             bCollider.enabled = false;
         }
@@ -22,5 +22,10 @@ public class QuestDealer : MonoBehaviour
         {
             questTrigger.questNumber = questNumber;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        QuestManager.Instance.isQuestTaken = true;
     }
 }

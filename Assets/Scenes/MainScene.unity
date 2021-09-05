@@ -2043,6 +2043,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 1
   itemName: elixir
+--- !u!1 &350355034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350355035}
+  - component: {fileID: 350355036}
+  m_Layer: 5
+  m_Name: Quest_3_main
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &350355035
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350355034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2111623711}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &350355036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350355034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca20259b4d6089a4c95d8d9834d7aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 3
+  startText: 2222222
+  endText: Good Job
+  isSideQuest: 0
+  xpReward: 30
+  targetEnemy: spirit
+  enemiesToKill: 1
 --- !u!1001 &353806864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67464,6 +67519,7 @@ RectTransform:
   - {fileID: 355413286}
   - {fileID: 557784051}
   - {fileID: 1776013654}
+  - {fileID: 350355035}
   m_Father: {fileID: 1872597100}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67488,7 +67544,9 @@ MonoBehaviour:
   - {fileID: 355413287}
   - {fileID: 557784052}
   - {fileID: 1776013655}
+  - {fileID: 350355036}
   questCompleted: 
+  isQuestTaken: 0
   itemCollected: 
   enemyKilled: 
 --- !u!4 &2113828629 stripped
