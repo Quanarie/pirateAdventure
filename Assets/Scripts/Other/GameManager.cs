@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     public Animator deathMenuAnimator;
     public Animator travelMenuAnimator;
     public QuestManager questManager;
+    public string LastSceneName;
 
     public GameObject dialogueBox;
     public Text dialogueText;

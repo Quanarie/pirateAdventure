@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Portal : Collidable
+public class TavernePortal : Portal
 {
-    public string sceneName;
-
     protected override void OnCollide(Collider2D collider)
     {
         if (collider.TryGetComponent(out Player _))
         {
             GameManager.Instance.SaveState();
 
-            GameManager.Instance.LastSceneName = SceneManager.GetActiveScene().name;
-
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(GameManager.Instance.LastSceneName);
         }
     }
 }
