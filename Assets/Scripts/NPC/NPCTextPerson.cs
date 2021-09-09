@@ -36,8 +36,8 @@ public class NPCTextPerson : Collidable
 
                 isBoxActive = false;
                 GameManager.Instance.dialogueBox.SetActive(false);
-
-                moveScript.enabled = true;
+                if (moveScript != null)
+                    moveScript.enabled = true;
                 GameManager.Instance.player.xSpeed = xSpeedPlayer;
                 GameManager.Instance.player.ySpeed = ySpeedPlayer;
             }
@@ -61,7 +61,8 @@ public class NPCTextPerson : Collidable
                 GameManager.Instance.dialogueText.text = message[0];
                 messageNumber++;
 
-                moveScript.enabled = false;
+                if (moveScript != null)
+                    moveScript.enabled = false;
                 GameManager.Instance.player.xSpeed = 0f;
                 GameManager.Instance.player.ySpeed = 0f;
                 isBoxActive = true;

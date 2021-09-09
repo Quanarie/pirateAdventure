@@ -220,7 +220,7 @@ TextureImporter:
     second: Characters_7
   - first:
       213: 1808964706522467271
-    second: Characters_8
+    second: NPC_red beard
   - first:
       213: 7649489486189614792
     second: Characters_9
@@ -643,7 +643,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters_8
+      name: NPC_red beard
       rect:
         serializedVersion: 2
         x: 0
