@@ -10,6 +10,7 @@ public class QuestObject : MonoBehaviour
     public bool isSideQuest;
 
     [SerializeField] private int xpReward;
+    [SerializeField] private int pesosReward;
 
     public void StartQuest()
     {
@@ -18,9 +19,13 @@ public class QuestObject : MonoBehaviour
 
     public void EndQuest()
     {
+        if (pesosReward != 0)
+        {
+            GameManager.Instance.GrantPesos(pesosReward);
+        }
+
         GameManager.Instance.GrantXp(xpReward);
 
-        GameManager.Instance.ShowText("+ " + xpReward + " xp", 30, Color.red, GameManager.Instance.player.transform.position, Vector3.up * 40, 1f);
         GameManager.Instance.ShowText(endText, 30, Color.black, GameManager.Instance.player.transform.position, Vector3.zero, 5f);
 
         QuestManager.Instance.questCompleted[questNumber] = true;

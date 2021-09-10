@@ -175,7 +175,7 @@ TextureImporter:
     second: menu_button
   - first:
       213: -4715630491957034652
-    second: pirates.v1_61
+    second: pirate
   - first:
       213: 2116578136512902229
     second: pirates.v1_62
@@ -1798,7 +1798,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirates.v1_61
+      name: pirate
       rect:
         serializedVersion: 2
         x: 16
