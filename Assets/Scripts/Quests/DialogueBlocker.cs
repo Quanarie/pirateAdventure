@@ -5,8 +5,10 @@ using UnityEngine;
 public class DialogueBlocker : MonoBehaviour
 {
     [SerializeField] private int afterQuestNumber;
-    
+
     [SerializeField] private string[] newDialogueText;
+    [SerializeField] private bool newText = true;
+
     private NPCTextPerson textScript;
 
     private void Start()
@@ -21,7 +23,7 @@ public class DialogueBlocker : MonoBehaviour
         {
             textScript.enabled = true;
         }
-        if (QuestManager.Instance.questCompleted[afterQuestNumber + 1])
+        if (QuestManager.Instance.questCompleted[afterQuestNumber + 1] && newText)
         {
             textScript.message = newDialogueText;
         }

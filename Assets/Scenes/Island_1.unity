@@ -58392,7 +58392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196845550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.913, y: 1.232, z: -0.40853265}
+  m_LocalPosition: {x: -9.06, y: -0.64, z: -0.40853265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72976,6 +72976,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1233218962
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7917863772947749206, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_Name
+      value: TravelMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.554
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.768
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917863772947749211, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d00ad8fd53e3e7347a65a5e6fb40c6e8, type: 3}
 --- !u!1 &1396514161
 GameObject:
   m_ObjectHideFlags: 0
@@ -73151,6 +73208,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1785186040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3018983375633121860, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_Name
+      value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018983375633121865, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a00c50a955571543a9d3a86bc0f4f11, type: 3}
 --- !u!1 &1837527494
 GameObject:
   m_ObjectHideFlags: 0
@@ -73187,11 +73301,13 @@ MonoBehaviour:
   newDialogueText:
   - Hi, thanks for your job
   - Yesterday i saw the man that came on Jamaica at midnight
-  - He was so terrible
+  - He was so terrible. His is called RedBeard
   - And he wasn`t looking quite alive, stange, isn`t it?
   - I`m quite sure that it was your ship, but not for 100%
   - But i know that he went by north-west direction
-  - Go and get him. Tell me something if you are alive
+  - Go and get him. But firstly get instructions in the taverne. Tell me something
+    if you are alive
+  newText: 1
 --- !u!114 &1837527496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73232,7 +73348,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

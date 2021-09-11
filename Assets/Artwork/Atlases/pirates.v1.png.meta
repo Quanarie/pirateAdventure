@@ -61,7 +61,7 @@ TextureImporter:
     second: pirates.v1_18
   - first:
       213: -2434911647185088362
-    second: pirates.v1_19
+    second: captain_0
   - first:
       213: -6172131441027606025
     second: pirates.v1_20
@@ -1000,7 +1000,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirates.v1_19
+      name: captain_0
       rect:
         serializedVersion: 2
         x: 80

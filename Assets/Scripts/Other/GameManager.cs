@@ -110,12 +110,12 @@ public class GameManager : MonoBehaviour
             OnLevelUp();
         }
 
-        GameManager.Instance.ShowText("+ " + xp + " xp", 30, Color.red, GameManager.Instance.player.transform.position, Vector3.up * 40, 1f);
+        GameManager.Instance.ShowText("+ " + xp + " xp", 30, Color.red, player.transform.position, Vector3.up * 40, 1f);
     }
     public void GrantPesos(int value)
     {
         pesos += value;
-        ShowText("+ " + value + " pesos", 25, Color.green, transform.position, Vector3.up * 25, 1f);
+        ShowText("+ " + value + " pesos", 25, Color.green, player.transform.position, Vector3.up * 25, 1f);
     }
     public void OnLevelUp()
     {
