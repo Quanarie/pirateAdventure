@@ -28,7 +28,7 @@ public class Player : Mover
         {
             UpdateMotor(new Vector3(x, y, 0));
 
-            if (x != 0 && y != 0)
+            if (x != 0 || y != 0)
             {
                 animator.SetBool("move", true);
             }

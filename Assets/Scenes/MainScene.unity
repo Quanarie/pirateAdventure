@@ -1206,7 +1206,7 @@ GameObject:
   - component: {fileID: 227072516}
   - component: {fileID: 227072519}
   m_Layer: 5
-  m_Name: Island_6
+  m_Name: Island_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7608aef57c531e4c8632feb99502367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Island_6
+  sceneName: Island_7
   distance: 30
 --- !u!114 &227072518
 MonoBehaviour:
@@ -1648,7 +1648,7 @@ GameObject:
   - component: {fileID: 322792550}
   - component: {fileID: 322792553}
   m_Layer: 5
-  m_Name: Island_3
+  m_Name: Island_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7608aef57c531e4c8632feb99502367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Island_3
+  sceneName: Island_4
   distance: 50
 --- !u!114 &322792552
 MonoBehaviour:
@@ -4357,7 +4357,7 @@ GameObject:
   - component: {fileID: 952329711}
   - component: {fileID: 952329714}
   m_Layer: 5
-  m_Name: Island_5
+  m_Name: Island_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4403,7 +4403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7608aef57c531e4c8632feb99502367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Island_5
+  sceneName: Island_6
   distance: 40
 --- !u!114 &952329713
 MonoBehaviour:
@@ -11066,11 +11066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ded793d3b7ab854384ff0bc3d23c4b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questNumber: 0
-  startText: 
-  endText: 
+  questNumber: 5
+  startText: You need to find the place of DEAD-men. Try different places!
+  endText: DEADMEN DUNGEON
   isSideQuest: 0
-  xpReward: 0
+  xpReward: 300
   pesosReward: 0
 --- !u!1 &1340420555
 GameObject:
@@ -12033,10 +12033,10 @@ RectTransform:
   m_Father: {fileID: 88082380}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483050342
 MonoBehaviour:
@@ -56608,7 +56608,7 @@ GameObject:
   - component: {fileID: 1775421846}
   - component: {fileID: 1775421849}
   m_Layer: 5
-  m_Name: Island_4
+  m_Name: Island_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56654,7 +56654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7608aef57c531e4c8632feb99502367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Island_4
+  sceneName: Island_5
   distance: 40
 --- !u!114 &1775421848
 MonoBehaviour:
@@ -68114,7 +68114,7 @@ MonoBehaviour:
   - {fileID: 1776013655}
   - {fileID: 350355037}
   - {fileID: 1667023772}
-  - {fileID: 0}
+  - {fileID: 1330003021}
   questCompleted: 
   itemCollected: 
   enemyKilled: 
