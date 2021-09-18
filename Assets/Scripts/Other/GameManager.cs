@@ -43,6 +43,9 @@ public class GameManager : MonoBehaviour
     public CharacterMenu characterMenu;
     [HideInInspector] public string LastSceneName;
 
+    public TradeOffer tradeOffer;
+    public Text priceText;
+
     public GameObject dialogueBox;
     public Text dialogueText;
 

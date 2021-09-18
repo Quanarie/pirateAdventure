@@ -40,6 +40,8 @@ public class NPCTextPerson : Collidable
                     moveScript.enabled = true;
                 GameManager.Instance.player.xSpeed = xSpeedPlayer;
                 GameManager.Instance.player.ySpeed = ySpeedPlayer;
+
+                ActivateTradeOffer();
             }
             else
             {
@@ -71,4 +73,9 @@ public class NPCTextPerson : Collidable
             }
         }
     }
+
+    protected virtual void ActivateTradeOffer()
+    {
+
+    }    
 }
