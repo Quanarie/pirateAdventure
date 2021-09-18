@@ -17,6 +17,12 @@ public class PauseMenuScript : MonoBehaviour
 
     private void Update()
     {
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            pauseMenuUI.SetActive(false);
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isGamePaused)

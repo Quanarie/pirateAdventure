@@ -125,7 +125,12 @@ public class GameManager : MonoBehaviour
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        GameObject spawnPoint = GameObject.Find("SpawnPoint");
+
+        if (spawnPoint != null)
+        {
+            player.transform.position = spawnPoint.transform.position;
+        }
     }
 
     public void Respawn()
