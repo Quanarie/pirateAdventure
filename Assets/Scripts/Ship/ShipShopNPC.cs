@@ -12,6 +12,7 @@ public class ShipShopNPC : MonoBehaviour
     public SpriteRenderer ship;
     public Sprite[] shipSprites;
     public Text buyShipText;
+    public Text pesosText;
 
     public Animator animator;
 
@@ -39,6 +40,8 @@ public class ShipShopNPC : MonoBehaviour
             buyShipText.text = prices[shipLevel + 1].ToString();
         }
         ship.sprite = shipSprites[shipLevel];
+
+        pesosText.text = GameManager.Instance.pesos.ToString();
     }
 
     public void BuyButtonClicked()

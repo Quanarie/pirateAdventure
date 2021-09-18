@@ -39,9 +39,9 @@ public class Player : Mover
         }
     }
 
-    public void SwapSprite(int skinId)
+    public void SwapAnimator(RuntimeAnimatorController animator)
     {
-        spriteRenderer.sprite = GameManager.Instance.playerSprites[skinId];
+        GetComponent<Animator>().runtimeAnimatorController = animator;
     }
 
     public void OnLevelUp()

@@ -9,10 +9,10 @@ public class QuestObject : MonoBehaviour
     public string endText;
     public bool isSideQuest;
 
-    [SerializeField] private int xpReward;
-    [SerializeField] private int pesosReward;
+    [SerializeField] protected int xpReward;
+    [SerializeField] protected int pesosReward;
 
-    public void StartQuest()
+    public virtual void StartQuest()
     {
         GameManager.Instance.ShowText(startText, 30, Color.black, GameManager.Instance.player.transform.position, Vector3.zero, 5f);
     }

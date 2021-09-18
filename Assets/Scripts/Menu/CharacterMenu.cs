@@ -7,7 +7,7 @@ public class CharacterMenu : MonoBehaviour
 {
     public Text levelText, hitpointText, pesosText, upgradeCostText, xpText;
 
-    private int currentCharacterSelection = 0;
+    public int currentCharacterSelection = 0;
     public Image characterSelectionSprite;
     public Image weaponSprite;
     public RectTransform xpBar;
@@ -37,10 +37,10 @@ public class CharacterMenu : MonoBehaviour
             OnSelectionChanged();
         }
     }
-    private void OnSelectionChanged()
+    public void OnSelectionChanged()
     {
         characterSelectionSprite.sprite = GameManager.Instance.playerSprites[currentCharacterSelection];
-        GameManager.Instance.player.SwapSprite(currentCharacterSelection);
+        GameManager.Instance.player.SwapAnimator(GameManager.Instance.playerAnimators[currentCharacterSelection]);
     }
 
     public void OnUpgradeClick()

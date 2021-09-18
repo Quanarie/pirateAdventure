@@ -316,7 +316,7 @@ TextureImporter:
     second: player2_3
   - first:
       213: -6195654629149473602
-    second: Characters_40
+    second: black_women
   - first:
       213: -5236463529230892270
     second: Characters_41
@@ -1315,7 +1315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Characters_40
+      name: black_women
       rect:
         serializedVersion: 2
         x: 0

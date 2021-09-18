@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     }
 
     public List<Sprite> playerSprites;
+    public List<RuntimeAnimatorController> playerAnimators;
     public List<Sprite> weaponSprites;
     public List<int> weaponPrices;
     public List<int> xpTable;
@@ -39,7 +40,8 @@ public class GameManager : MonoBehaviour
     public Animator deathMenuAnimator;
     public Animator travelMenuAnimator;
     public QuestManager questManager;
-    public string LastSceneName;
+    public CharacterMenu characterMenu;
+    [HideInInspector] public string LastSceneName;
 
     public GameObject dialogueBox;
     public Text dialogueText;
@@ -152,7 +154,7 @@ public class GameManager : MonoBehaviour
     {
         string s = "";
 
-        s += "0" + "|";
+        s += characterMenu.currentCharacterSelection.ToString() + "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString() + "|";
@@ -170,6 +172,8 @@ public class GameManager : MonoBehaviour
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
+        characterMenu.currentCharacterSelection = int.Parse(data[0]);
+
         pesos = int.Parse(data[1]);
 
         experience = int.Parse(data[2]);
@@ -179,5 +183,7 @@ public class GameManager : MonoBehaviour
         weapon.SetLevelWeapon(int.Parse(data[3]));
 
         questManager.SetCurrentMainQuest(int.Parse(data[5]));
+
+        characterMenu.OnSelectionChanged();
     }
 }
