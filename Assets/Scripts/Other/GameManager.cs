@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
     public TradeOffer tradeOffer;
     public Text priceText;
 
+    public SFXManager sfxManager;
+
     public GameObject dialogueBox;
     public Text dialogueText;
 

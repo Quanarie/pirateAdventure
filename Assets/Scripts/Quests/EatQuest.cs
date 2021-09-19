@@ -8,7 +8,6 @@ public class EatQuest : QuestObject
     [SerializeField] private float timeExisting;
     [SerializeField] private int maxReward;
     private Slider slider;
-    private float difficulty = 10f;
 
     private void Start()
     {
@@ -24,10 +23,10 @@ public class EatQuest : QuestObject
 
     private void Update()
     {
-        slider.value -= Time.deltaTime;
+        slider.value -= 0.003f;
         if (slider.value < 0) slider.value = 0;
 
-        if (Input.GetMouseButtonDown(0)) slider.value += Time.deltaTime * difficulty;
+        if (Input.GetMouseButtonDown(0)) slider.value += 0.2f;
     }
 
     public IEnumerator disableQuest()

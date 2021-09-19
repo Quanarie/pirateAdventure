@@ -80,4 +80,14 @@ public class Enemy : Mover
 
         QuestManager.Instance.enemyKilled = nameForQuest;
     }
+
+    protected override void ReceiveDamage(Damage dmg)
+    {
+        base.ReceiveDamage(dmg);
+
+        if (!GameManager.Instance.sfxManager.player_attack.isPlaying)
+        {
+            GameManager.Instance.sfxManager.player_attack.Play();
+        }
+    }
 }

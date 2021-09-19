@@ -43,6 +43,8 @@ public class Weapon : Collidable
     private void Swing()
     {
         animator.SetTrigger("Swing");
+
+        GameManager.Instance.sfxManager.player_swoosh.Play();
     }
 
     protected override void OnCollide(Collider2D collider)

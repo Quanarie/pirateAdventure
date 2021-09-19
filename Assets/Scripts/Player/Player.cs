@@ -66,6 +66,11 @@ public class Player : Mover
         base.ReceiveDamage(dmg);
 
         GameManager.Instance.OnHitpointChange();
+
+        if (!GameManager.Instance.sfxManager.player_hurt.isPlaying)
+        {
+            GameManager.Instance.sfxManager.player_hurt.Play();
+        }
     }
 
     protected override void Death()
