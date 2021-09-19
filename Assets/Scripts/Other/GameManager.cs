@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     public Text priceText;
 
     public SFXManager sfxManager;
+    public MusicManager musicManager;
 
     public GameObject dialogueBox;
     public Text dialogueText;
