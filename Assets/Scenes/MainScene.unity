@@ -3892,7 +3892,7 @@ MonoBehaviour:
   endText: You got it!
   isSideQuest: 1
   xpReward: 15
-  pesosReward: 0
+  pesosReward: 10
   targetItem: elixir
 --- !u!1 &571561939
 GameObject:
