@@ -52,9 +52,23 @@ public class GameManager : MonoBehaviour
     public GameObject dialogueBox;
     public Text dialogueText;
 
+    public ShipShopNPC shipShop;
+
     public int pesos;
     public int experience;
     public int shipLevel;
+
+    private void Start()
+    {
+        GameObject firstSpawnPoint = GameObject.Find("FirstSpawnPoint");
+
+        if (firstSpawnPoint != null)
+        {
+            player.transform.position = firstSpawnPoint.transform.position;
+        }
+
+        shipShop = GetComponentInChildren<ShipShopNPC>();
+    }
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
@@ -139,6 +153,13 @@ public class GameManager : MonoBehaviour
         {
             player.transform.position = spawnPoint.transform.position;
         }
+
+        GameObject shipSpawnPoint = GameObject.Find("ShipSpawnPoint");
+
+        if (shipSpawnPoint != null)
+        {
+            shipShop.ship.transform.position = shipSpawnPoint.transform.position;
+        }
     }
 
     public void Respawn()
@@ -164,7 +185,7 @@ public class GameManager : MonoBehaviour
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString() + "|";
-        s += "0" + "|";
+        s += shipLevel + "|";
         s += QuestManager.Instance.GetCurrentMainQuest().ToString();
 
         PlayerPrefs.SetString("SaveState", s);
@@ -187,6 +208,8 @@ public class GameManager : MonoBehaviour
             player.SetLevel(GetCurrentLevel());
 
         weapon.SetLevelWeapon(int.Parse(data[3]));
+
+        shipLevel = int.Parse(data[4]);
 
         questManager.SetCurrentMainQuest(int.Parse(data[5]));
 

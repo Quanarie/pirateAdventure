@@ -26,5 +26,7 @@ public class Boss0 : Enemy
         GameManager.Instance.ShowText("+ " + xpValue + " xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1f);
 
         QuestManager.Instance.enemyKilled = nameForQuest;
+
+        
     }
 }
