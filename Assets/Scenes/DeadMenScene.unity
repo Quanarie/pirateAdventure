@@ -37923,7 +37923,7 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverySpeed: 0.2
-  ySpeed: 0.75
+  ySpeed: 1
   xSpeed: 1
   nameForQuest: spirit
   xpValue: 10
@@ -38161,7 +38161,7 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverySpeed: 0.2
-  ySpeed: 0.75
+  ySpeed: 1
   xSpeed: 1
   nameForQuest: spirit
   xpValue: 10
@@ -38368,7 +38368,7 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverySpeed: 0.2
-  ySpeed: 0.75
+  ySpeed: 1
   xSpeed: 1
   nameForQuest: spirit
   xpValue: 10
@@ -38583,7 +38583,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
+  damage: 2
   pushForce: 2
 --- !u!61 &9055408426928096228
 BoxCollider2D:
@@ -38711,7 +38711,7 @@ MonoBehaviour:
   hitpoint: 10
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
-  ySpeed: 0.75
+  ySpeed: 1
   xSpeed: 1
   nameForQuest: 
   xpValue: 1
@@ -38833,8 +38833,8 @@ MonoBehaviour:
   hitpoint: 20
   maxHitpoint: 20
   pushRecoverySpeed: 0.5
-  ySpeed: 0.375
-  xSpeed: 0.5
+  ySpeed: 0.7
+  xSpeed: 0.7
   nameForQuest: 
   xpValue: 50
   triggerLenght: 2
