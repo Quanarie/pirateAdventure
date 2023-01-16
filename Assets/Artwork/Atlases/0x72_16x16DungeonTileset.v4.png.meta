@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -76,10 +77,10 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 1
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -481,6 +482,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      boss0: -4590863263307369687
+      weapon_0: -4232372475135122399
+      elixir0: -451688941019097673
+      weapon_1: -8248157553010839229
+      weapon_2: 7553454342033508592
+      box: 7401702256180518906
+      weapon_3: 2069415083503212722
+      weapon_4: 4468469751869076317
+      boxes_two: -8168956363209427361
+      pirate_1: 8901929280354850880
+      enemy_0: -6845980268273053146
+      weapon_5: -1067665510509528309
+      weapon_6: 8130407264197782721
+      boxes_three: 3464155034166208913
+      bossHelper0: 5346793723966489441
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

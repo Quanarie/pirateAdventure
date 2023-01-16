@@ -36,6 +36,7 @@ public class QuestManager : MonoBehaviour
 
         for (int i = 0; i < questNumber; i++)
         {
+            print(i + " wtf");
             if (!quests[i].isSideQuest)
             {
                 questCompleted[i] = true;

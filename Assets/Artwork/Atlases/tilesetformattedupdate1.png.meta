@@ -234,6 +234,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -243,11 +244,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1615,6 +1616,68 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tilesetformattedupdate1_50: -2599215593247275480
+      tilesetformattedupdate1_7: 2171340759970597649
+      tilesetformattedupdate1_42: -6196783468211368013
+      tilesetformattedupdate1_29: -6589729484391073169
+      tilesetformattedupdate1_10: 7800343079581839995
+      tilesetformattedupdate1_21: -6902320655215539880
+      tilesetformattedupdate1_46: 5365708425517337531
+      tilesetformattedupdate1_24: 2947862207923346191
+      tilesetformattedupdate1_69: 4362278685590123121
+      tilesetformattedupdate1_60: -737577908224187774
+      tilesetformattedupdate1_3: 1771613288839584780
+      tilesetformattedupdate1_4: 8832182980829192644
+      rooff: -289909062963813447
+      tilesetformattedupdate1_36: -628121285421809482
+      tilesetformattedupdate1_41: -5005814988543799116
+      tilesetformattedupdate1_59: -3754907186225509919
+      tilesetformattedupdate1_40: -8368268899523792477
+      tilesetformattedupdate1_48: 2012925098655226224
+      tilesetformattedupdate1_25: -5913310401077974999
+      tilesetformattedupdate1_62: -4372005570885810826
+      tilesetformattedupdate1_8: 1316331263880017371
+      tilesetformattedupdate1_28: -699909952755034610
+      tilesetformattedupdate1_47: -4988511859942229112
+      tilesetformattedupdate1_37: -1083412602063644890
+      tilesetformattedupdate1_5: -758179382753831997
+      tilesetformattedupdate1_57: -2480378289177194457
+      tilesetformattedupdate1_67: -1006011258418104773
+      tilesetformattedupdate1_12: -1728693888658218422
+      tilesetformattedupdate1_22: -1121508030772797250
+      tilesetformattedupdate1_11: -8085389015821416275
+      tilesetformattedupdate1_13: -3448453225969548409
+      tilesetformattedupdate1_33: 6520127341398739405
+      tilesetformattedupdate1_52: 7170944362427313371
+      tilesetformattedupdate1_54: -7144199684593745403
+      tilesetformattedupdate1_39: 7088216980738910447
+      tilesetformattedupdate1_35: 7849164326673889689
+      tilesetformattedupdate1_51: 8796396599460493354
+      tilesetformattedupdate1_58: 991326495483995290
+      tilesetformattedupdate1_65: -2295566141149103543
+      tilesetformattedupdate1_2: 1450895737294311072
+      tilesetformattedupdate1_19: 8836669652621401896
+      tilesetformattedupdate1_63: -3519281309386182128
+      tilesetformattedupdate1_64: -4791602192281161374
+      tilesetformattedupdate1_34: 6590666822061474821
+      tilesetformattedupdate1_1: -5536866468224602559
+      tilesetformattedupdate1_38: -5633760371516646367
+      tilesetformattedupdate1_20: -8669564042139388977
+      tilesetformattedupdate1_9: -7899779759525737576
+      tilesetformattedupdate1_61: -5907019164194012650
+      tilesetformattedupdate1_0: -6031728495333164055
+      tilesetformattedupdate1_27: 2869253688582213745
+      tilesetformattedupdate1_53: 5512120544883620924
+      tilesetformattedupdate1_26: -4687716727441612703
+      tilesetformattedupdate1_56: -2099864625616347318
+      tilesetformattedupdate1_66: 3793676886812611149
+      tilesetformattedupdate1_23: 8836664463224184408
+      tilesetformattedupdate1_43: 8065397807306322459
+      tilesetformattedupdate1_30: -8162836036523530723
+      tilesetformattedupdate1_49: -7649964733200152664
+      tilesetformattedupdate1_68: 2993086085952971856
+      tilesetformattedupdate1_55: -2004292809014851706
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

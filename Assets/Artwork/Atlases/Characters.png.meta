@@ -408,6 +408,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -417,11 +418,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1828,6 +1829,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Characters_9: 7649489486189614792
+      Characters_49: 2075355484574984046
+      Characters_59: -8577979864781628159
+      player1_3: 6716731256078600817
+      Characters_61: -8672398759607845041
+      Characters_13: -479236782097018826
+      player2_1: -9075125957270007806
+      Characters_29: 6810973084642349558
+      player1_1: -7424387843487759793
+      Characters_12: -532960962129546369
+      Characters_28: -4424300748493377099
+      player_0: -1965401998591550813
+      Characters_62: 6617200525155391503
+      player_3: 3554242101514492605
+      Characters_46: 4709936332561506648
+      Characters_24: 6159244442380671589
+      sailor1_0: -801139475012854697
+      player_2: -6685782176977451322
+      Characters_15: 4769413903677429357
+      Characters_63: -637342108791370015
+      Characters_0: 3542127132570728493
+      Characters_10: -9119583415266913145
+      sailor1_3: 7986069883408515600
+      player2_3: -3155761069584523039
+      Characters_3: 57365866442116020
+      Characters_43: -6512646546361950438
+      Characters_58: 3013884743363956704
+      Characters_57: -5426759641723939394
+      player_1: 8760199315114398310
+      Characters_47: 601219047875073011
+      Characters_56: -8330783335136856883
+      player2_0: 933303178881835478
+      Characters_7: 115972425246325791
+      Characters_32: 6219003440579763265
+      Characters_35: 7305490789916571938
+      Characters_51: -1482179545023172997
+      Characters_1: -1960546628078278901
+      Characters_25: 8902602265628216436
+      player2_2: 4397737812864955831
+      questDealer: -2295010489493539482
+      mechanic: 2154758275318018791
+      Characters_60: -3103966700498583647
+      Characters_2: 8248543377919322394
+      Characters_5: -7914586359189542566
+      Characters_14: -4791017427084006217
+      Characters_11: -2499558952833973110
+      Characters_30: 3657170799413675112
+      Characters_41: -5236463529230892270
+      Characters_26: 2861855363009835268
+      Characters_42: 2993409916026883389
+      Characters_27: 7192599230480733807
+      sailor1_1: 4447869440850320437
+      Characters_4: 2807314771408455767
+      Characters_6: 3112702236248781428
+      player1_2: 651816595902088185
+      NPC_red beard: 1808964706522467271
+      Characters_50: 8209100544923272303
+      Characters_33: -5662792600067641636
+      Characters_34: 4261722457816353934
+      player1_0: 6440628458277568191
+      Characters_45: -3296487692259334306
+      sailor1_2: -1487682469103930290
+      black_women: -6195654629149473602
+      Characters_31: 523907573312047627
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

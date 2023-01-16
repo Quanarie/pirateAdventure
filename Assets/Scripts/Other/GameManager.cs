@@ -187,6 +187,7 @@ public class GameManager : MonoBehaviour
         s += weapon.weaponLevel.ToString() + "|";
         s += shipLevel + "|";
         s += QuestManager.Instance.GetCurrentMainQuest().ToString();
+        print("saved " + QuestManager.Instance.GetCurrentMainQuest().ToString());
 
         PlayerPrefs.SetString("SaveState", s);
     }
@@ -212,6 +213,7 @@ public class GameManager : MonoBehaviour
         shipLevel = int.Parse(data[4]);
 
         questManager.SetCurrentMainQuest(int.Parse(data[5]));
+        print("loaded " + int.Parse(data[5]));
 
         characterMenu.OnSelectionChanged();
     }

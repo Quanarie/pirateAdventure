@@ -11,7 +11,8 @@ public class QuestItem : MonoBehaviour
     {
         if (collision.TryGetComponent(out Player _))
         {
-            if (!QuestManager.Instance.questCompleted[questNumber] && QuestManager.Instance.quests[questNumber].gameObject.activeSelf)
+            if (!QuestManager.Instance.questCompleted[questNumber]
+                && QuestManager.Instance.quests[questNumber].gameObject.activeSelf)
             {
                 QuestManager.Instance.itemCollected = itemName;
 
